@@ -1,0 +1,3 @@
+[submodule "glyphy"]
+	path = glyphy
+	url = git@github.com:behdad/glyphy.git
