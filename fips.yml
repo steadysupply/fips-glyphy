@@ -5,4 +5,4 @@ exports:
     glyphy: .
 imports:
   fips-freetype2:
-    git: git@github.com:mgerhardy/fips-freetype2.git
+    git: git@github.com:steadysupply/fips-freetype2.git
