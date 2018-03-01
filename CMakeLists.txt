@@ -1,0 +1,25 @@
+fips_begin_lib(glyphy)
+	include_directories(glyphy/src)
+	find_package(OpenGL REQUIRED)
+	fips_files(
+		glyphy/src/glyphy-arc-bezier.hh
+		glyphy/src/glyphy-arc.cc
+		glyphy/src/glyphy-arcs-bezier.hh
+		glyphy/src/glyphy-arcs.cc
+		glyphy/src/glyphy-blob.cc
+		glyphy/src/glyphy-common-glsl.h
+		glyphy/src/glyphy-common.glsl
+		glyphy/src/glyphy-common.hh
+		glyphy/src/glyphy-extents.cc
+		glyphy/src/glyphy-freetype.h
+		glyphy/src/glyphy-geometry.hh
+		glyphy/src/glyphy-outline.cc
+		glyphy/src/glyphy-sdf-glsl.h
+		glyphy/src/glyphy-sdf.cc
+		glyphy/src/glyphy-sdf.glsl
+		glyphy/src/glyphy-shaders.cc
+		glyphy/src/glyphy.h
+	)
+	include_directories(${OPENGL_INCLUDE_DIR})
+	fips_libs(${OPENGL_LIBRARIES})
+fips_end_lib()

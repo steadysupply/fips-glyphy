@@ -1,3 +1,8 @@
 ---
 exports:
   header-dirs: [ glyphy/src ]
+  modules:
+    glyphy: .
+imports:
+  fips-freetype2:
+    git: git@github.com:mgerhardy/fips-freetype2.git
