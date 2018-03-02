@@ -1,6 +1,6 @@
 fips_begin_lib(glyphy)
+    add_definitions(-DPKGDATADIR=".")
     include_directories(glyphy/src)
-    find_package(OpenGL REQUIRED)
     fips_files(
         glyphy/src/glyphy-arc-bezier.hh
         glyphy/src/glyphy-arc.cc
@@ -20,6 +20,7 @@ fips_begin_lib(glyphy)
         glyphy/src/glyphy-shaders.cc
         glyphy/src/glyphy.h
     )
-    include_directories(${OPENGL_INCLUDE_DIR})
-    fips_libs(${OPENGL_LIBRARIES})
+    # include_directories(${OPENGL_INCLUDE_DIR})
+    # find_package(OpenGL REQUIRED)
+    # fips_libs(${OPENGL_LIBRARIES})
 fips_end_lib()
